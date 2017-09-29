@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.hp.relativelayout.MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/button5"
+        android:id="@+id/btn_five"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/button3"
+        android:id="@+id/btn_three"
+        android:layout_toLeftOf="@+id/btn_five"
+        android:layout_above="@+id/btn_five"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginTop="@dimen/margin_button_top"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/button4"
+        android:id="@+id/btn_fore"
+        android:layout_toRightOf="@+id/btn_five"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_above="@+id/btn_five"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/button1"
+        android:id="@+id/btn_one"
+        android:layout_toLeftOf="@+id/btn_three"
+        android:layout_above="@+id/btn_three"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="@string/button2"
+        android:id="@+id/btn_tow"
+        android:layout_toRightOf="@+id/btn_fore"
+        android:layout_above="@+id/btn_fore"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
